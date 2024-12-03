@@ -89,8 +89,9 @@ public class ModMenuConfig {
 	}
 
 	public enum Sorting {
-		ASCENDING(Comparator.comparing(mod -> mod.getTranslatedName()
-			.toLowerCase(Locale.ROOT))), DESCENDING(ASCENDING.getComparator().reversed());
+		ASCENDING(Comparator.comparing(mod -> mod.getTranslatedName().toLowerCase(Locale.ROOT))),
+		DESCENDING(ASCENDING.getComparator().reversed()),
+		HAS_UPDATE(Comparator.comparing(Mod::hasUpdate).reversed());
 
 		private final Comparator<Mod> comparator;
 

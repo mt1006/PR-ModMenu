@@ -141,7 +141,7 @@ public class ModsScreen extends Screen {
 		Text sortingText = ModMenuConfig.SORTING.getButtonText();
 		Text librariesText = ModMenuConfig.SHOW_LIBRARIES.getButtonText();
 
-		int sortingWidth = textRenderer.getWidth(sortingText) + 20;
+		int sortingWidth = textRenderer.getWidth(sortingText) + 28;
 		int librariesWidth = textRenderer.getWidth(librariesText) + 20;
 
 		this.filtersWidth = librariesWidth + sortingWidth + 2;
